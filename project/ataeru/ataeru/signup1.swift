@@ -32,6 +32,7 @@ struct signup1: View {
                 .frame(width: UIScreen.main.bounds.width  , height: 90, alignment: .top)
                     .ignoresSafeArea()
                     Spacer()
+                ScrollView(.vertical , showsIndicators:false){
         VStack{
         Text("Enter your name please:")
         TextField(" Enter your name , please ",text: $name)
@@ -80,7 +81,7 @@ struct signup1: View {
                 Text("signup")
             })
             
-
+        }
             
         }
                 Rectangle()
