@@ -9,36 +9,92 @@ import SwiftUI
 
 struct signup1: View {
     
-   @State var area : String = ""
-   @State var block : String = ""
-   @State var street: String = ""
-    @State var house : String = ""
-    @State var name : String = ""
-     @State var phone : String = ""
-     @State var email : String = ""
+    
+    @Environment (\.presentationMode)var presentation
+
+    
+    @Binding var area : String
+    @Binding var block : String
+    @Binding var street: String
+     @Binding var house : String
+     @Binding var name : String
+      @Binding var phone : String
+      @Binding var email : String
+     @Binding var password : String
+    
+   
     var body: some View {
+        ZStack{
+            
+            VStack{
+                 Rectangle()
+                .fill(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+                .frame(width: UIScreen.main.bounds.width  , height: 90, alignment: .top)
+                    .ignoresSafeArea()
+                    Spacer()
         VStack{
-        Text("Enter your name please")
+        Text("Enter your name please:")
         TextField(" Enter your name , please ",text: $name)
-        Text("Enter your area please")
+            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+            .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+            .padding()
+        Text("Enter your area please:")
         TextField(" Enter your area , please ",text:$area)
-        Text("Enter your street please")
+            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+            .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+            .padding()
+            Text("Enter your block please:")
+            TextField(" Enter your block , please ",text:$block)
+                .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+                .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+                .padding()
+        Text("Enter your street please:")
             VStack{
         TextField(" Enter your street , please ",text:$street)
-        Text("Enter your house please")
+            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+            .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+            .padding()
+        Text("Enter your house please:")
         TextField(" Enter your house , please ",text:$house)
-        Text("Enter your email please")
+            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+            .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+            .padding()
+        Text("Enter your email please:")
         TextField(" Enter your email , please ",text:$email)
-        Text("Enter your phone please")
+            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+            .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+            .padding()
+                Text("Enter your password please:")
+                TextField(" Enter your password , please ",text:$password)
+                    .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+                    .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+                    .padding()
+        Text("Enter your phone please:")
         TextField(" Enter your phone , please ",text:$phone )
+            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+            .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+            .padding()
             }
+            
+            Button(action: {presentation.wrappedValue.dismiss()}, label: {
+                Text("signup")
+            })
+            
+
+            
         }
+                Rectangle()
+            .fill(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+            .ignoresSafeArea()
+            .frame(width: UIScreen.main.bounds.width , height: UIScreen.main.bounds.width - 350, alignment: .bottom)
     }
+            
+            
    // .navigationTitle("sign up")
 }
-
-struct signup1_Previews: PreviewProvider {
-    static var previews: some View {
-        signup1()
-    }
-}
+    }}
+//struct signup1_Previews: PreviewProvider {
+//    static var previews: some View {
+//        signup1()
+//    }
+//}

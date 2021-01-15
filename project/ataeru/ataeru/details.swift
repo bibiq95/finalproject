@@ -6,14 +6,15 @@
 //
 
 import Foundation
-struct data : Identifiable {
+struct data : Identifiable , Hashable{
     var pic : String
     var price : Double
+    
     let id = UUID()
 }
 var clothesdata = [
     
-    data(pic: "2", price: 40),
+    data(pic: "1", price: 40),
     data(pic: "3", price: 15),
     data(pic: "4", price: 29),
     data(pic: "5", price: 20),
@@ -29,3 +30,13 @@ var basketdata = [
 
 
 let allsize =  ["1 month ","3 months","6 months" , "12 months", "18 months", "2 years" , "3 years", "4 years" , "5 years" , " 6 years "]
+
+
+
+struct iteminbag : Identifiable , Hashable{
+    var item : data
+    var items : Int
+    var selectedsize : String
+    let id = UUID()
+    
+}

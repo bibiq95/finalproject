@@ -10,18 +10,24 @@
 		295AC44625AE05D100B6B76D /* itemdetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AC44525AE05D100B6B76D /* itemdetails.swift */; };
 		295AC44925AE0EEF00B6B76D /* allitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AC44825AE0EEF00B6B76D /* allitem.swift */; };
 		295AC44D25AEF9E000B6B76D /* signup1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AC44C25AEF9E000B6B76D /* signup1.swift */; };
+		295AC45725B0961000B6B76D /* bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AC45625B0961000B6B76D /* bag.swift */; };
+		295AC45A25B09B4F00B6B76D /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AC45925B09B4F00B6B76D /* model.swift */; };
+		295AC45D25B0A04B00B6B76D /* welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295AC45C25B0A04B00B6B76D /* welcome.swift */; };
 		29A0587225AD8FDB00C8ECE4 /* ataeruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0587125AD8FDB00C8ECE4 /* ataeruApp.swift */; };
 		29A0587425AD8FDB00C8ECE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0587325AD8FDB00C8ECE4 /* ContentView.swift */; };
 		29A0587625AD8FDD00C8ECE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A0587525AD8FDD00C8ECE4 /* Assets.xcassets */; };
 		29A0587925AD8FDD00C8ECE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A0587825AD8FDD00C8ECE4 /* Preview Assets.xcassets */; };
 		29A0588525ADA5AD00C8ECE4 /* details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0588425ADA5AD00C8ECE4 /* details.swift */; };
-		29A0588925ADAFDA00C8ECE4 /* bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0588825ADAFDA00C8ECE4 /* bag.swift */; };
+		29A0588925ADAFDA00C8ECE4 /* bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0588825ADAFDA00C8ECE4 /* bill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		295AC44525AE05D100B6B76D /* itemdetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemdetails.swift; sourceTree = "<group>"; };
 		295AC44825AE0EEF00B6B76D /* allitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allitem.swift; sourceTree = "<group>"; };
 		295AC44C25AEF9E000B6B76D /* signup1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signup1.swift; sourceTree = "<group>"; };
+		295AC45625B0961000B6B76D /* bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bag.swift; sourceTree = "<group>"; };
+		295AC45925B09B4F00B6B76D /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		295AC45C25B0A04B00B6B76D /* welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcome.swift; sourceTree = "<group>"; };
 		29A0586E25AD8FDB00C8ECE4 /* ataeru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ataeru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A0587125AD8FDB00C8ECE4 /* ataeruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ataeruApp.swift; sourceTree = "<group>"; };
 		29A0587325AD8FDB00C8ECE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,7 +35,7 @@
 		29A0587825AD8FDD00C8ECE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		29A0587A25AD8FDD00C8ECE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A0588425ADA5AD00C8ECE4 /* details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = details.swift; sourceTree = "<group>"; };
-		29A0588825ADAFDA00C8ECE4 /* bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bag.swift; sourceTree = "<group>"; };
+		29A0588825ADAFDA00C8ECE4 /* bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,15 +69,18 @@
 			isa = PBXGroup;
 			children = (
 				29A0587125AD8FDB00C8ECE4 /* ataeruApp.swift */,
+				295AC45C25B0A04B00B6B76D /* welcome.swift */,
 				29A0587325AD8FDB00C8ECE4 /* ContentView.swift */,
+				295AC44C25AEF9E000B6B76D /* signup1.swift */,
 				295AC44825AE0EEF00B6B76D /* allitem.swift */,
 				295AC44525AE05D100B6B76D /* itemdetails.swift */,
 				29A0588425ADA5AD00C8ECE4 /* details.swift */,
-				29A0588825ADAFDA00C8ECE4 /* bag.swift */,
-				295AC44C25AEF9E000B6B76D /* signup1.swift */,
+				295AC45625B0961000B6B76D /* bag.swift */,
+				29A0588825ADAFDA00C8ECE4 /* bill.swift */,
 				29A0587525AD8FDD00C8ECE4 /* Assets.xcassets */,
 				29A0587A25AD8FDD00C8ECE4 /* Info.plist */,
 				29A0587725AD8FDD00C8ECE4 /* Preview Content */,
+				295AC45925B09B4F00B6B76D /* model.swift */,
 			);
 			path = ataeru;
 			sourceTree = "<group>";
@@ -153,13 +162,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				295AC45725B0961000B6B76D /* bag.swift in Sources */,
 				295AC44925AE0EEF00B6B76D /* allitem.swift in Sources */,
 				29A0587425AD8FDB00C8ECE4 /* ContentView.swift in Sources */,
 				295AC44D25AEF9E000B6B76D /* signup1.swift in Sources */,
 				29A0587225AD8FDB00C8ECE4 /* ataeruApp.swift in Sources */,
+				295AC45A25B09B4F00B6B76D /* model.swift in Sources */,
 				295AC44625AE05D100B6B76D /* itemdetails.swift in Sources */,
 				29A0588525ADA5AD00C8ECE4 /* details.swift in Sources */,
-				29A0588925ADAFDA00C8ECE4 /* bag.swift in Sources */,
+				29A0588925ADAFDA00C8ECE4 /* bill.swift in Sources */,
+				295AC45D25B0A04B00B6B76D /* welcome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

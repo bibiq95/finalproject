@@ -11,7 +11,7 @@ import SwiftUI
 struct ataeruApp: App {
     var body: some Scene {
         WindowGroup {
-             ContentView()
+             welcome()
         }
     }
 }

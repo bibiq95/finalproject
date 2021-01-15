@@ -2,84 +2,83 @@
 //  bag.swift
 //  ataeru
 //
-//  Created by alqattan on 12/01/2021.
+//  Created by alqattan on 14/01/2021.
 //
 
 import SwiftUI
 
 struct bag: View {
-   
-    @State var buttoncolor: Color = .blue
-    @State var btntxt = " pay now "
-    var name : String = ""
-    var phone : String = ""
-    var adress : [String]
-    var total : Double = 0.0
-            var body: some View {
-                VStack{
-                    Spacer()
-                    HStack{
-                        
-
-                    Text("name")
-                        Spacer()
-                        Text("\(name)")
-
-                    }
-                    
-                  
-                    
-                    HStack{
-                    Text("adress")
-                        
-                        Spacer()
-                     //   Text("\(adress)")
-                        
-                    }
-                    
-                    HStack{
-
-
-                    Text("phone number")
-                        Spacer()
-                        Text ("\(phone)")
-                            
-
-                    }
-
-                    HStack{
-
-
-                    Text("Total")
-                        Spacer()
-                        Text("\(total)")
-                    }
-                   Spacer()
-                    
-                  
-                    Button(action: {
-                        self.btntxt="Paid"
-                        self.buttoncolor=Color.green
-                    }, label: {
-                        Text(btntxt)
-                       .foregroundColor(.white)
-                        .font(.largeTitle)
-                        .padding()
-                      .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .background(buttoncolor)
-                        .cornerRadius(8.0)
-                        .padding()
-                    })
-
-                    .navigationTitle("your bag")
-                }
-                .padding()
-            }
-        }
     
+    @Binding var area : String
+    @Binding var block : String
+    @Binding var street: String
+     @Binding var house : String
+     @Binding var name : String
+      @Binding var phone : String
+      @Binding var email : String
+     @Binding var password : String
+    
+    var item : data
+    var items : Int
+    var selectedsize : String
+    var t : Double
+  //  var allitems : iteminbag
+    var body: some View {
+        
+        VStack{
+             Rectangle()
+            .fill(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+            .frame(width: UIScreen.main.bounds.width , height: 90, alignment: .top)
+                .ignoresSafeArea()
+            
+                Spacer()
+        
+            VStack (alignment: .center , spacing :40)
+        {
+            Image(item.pic)
+                .resizable()
+               // .scaledToFit()
+                .frame(width:50, height:100)
+               // .padding(.all)
+            
+            Text("\(items) item ")
+               
+            Text("  \(selectedsize) size ")
+                
+            }
+            Spacer()
+            Spacer()
+            Spacer()
+            VStack{
+            NavigationLink(
+                destination: bill(area: $area, block: $block, street: $street, house: $house, name: $name, phone: $phone, email: $email, password: $password, item: item, total: t ),
+                label: {
+                    HStack{
+                    Text("pay ")
+                        //.font(.title)
+                        .padding()
+                        .frame(width: 100, height: 50, alignment:.center)
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .cornerRadius(8.0)
+                       // Spacer()
 
-struct bag_Previews: PreviewProvider {
-    static var previews: some View {
-        bag( adress: [""])
+                    }
+                })
+            
+        }
+           Spacer()
+            Spacer()
+            
+            Rectangle()
+        .fill(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+        .ignoresSafeArea()
+        .frame(width: UIScreen.main.bounds.width , height: UIScreen.main.bounds.width - 350, alignment: .bottom)
     }
 }
+}
+//struct bag_Previews: PreviewProvider {
+//    static var previews: some View {
+//        bag()
+//    }
+//}
