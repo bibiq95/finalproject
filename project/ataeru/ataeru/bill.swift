@@ -102,7 +102,7 @@ var body: some View {
             Rectangle()
         .fill(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
         .ignoresSafeArea()
-        .frame(width: UIScreen.main.bounds.width , height: UIScreen.main.bounds.width - 350, alignment: .bottom)
+        .frame(width: UIScreen.main.bounds.width , height: UIScreen.main.bounds.width - 300, alignment: .bottom)
              
             }
         
